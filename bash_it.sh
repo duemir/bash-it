@@ -2,7 +2,7 @@
 # Initialize Bash It
 
 # Reload Library
-alias reload='source ~/.bash_profile'
+alias reload='source ~/.bashrc'
 
 # Only set $BASH_IT if it's not already set
 if [ -z "$BASH_IT" ];
