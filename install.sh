@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 BASH_IT="$HOME/.bash_it"
 
-cp $HOME/.bashrc $HOME/.bashrc.bak
-
-echo "Your original .bashrc has been backed up to .bashrc.bak"
+test -w $HOME/.bashrc &&
+  cp $HOME/.bashrc $HOME/.bashrc.bak &&
+  echo "Your original .bashrc has been backed up to .bash_profile.bak"
 
 cp $HOME/.bash_it/template/bashrc.template.bash $HOME/.bashrc
 
